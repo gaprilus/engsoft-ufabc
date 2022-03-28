@@ -22,14 +22,22 @@ const data = [{
 }]
 
 export default class Mercadorias extends Component {
+    
+    state = {
+        cadastro_venda: {
+        commodity: '',
+        data_disponivel: '',
+        quantidade: '',
+        preco: 0,
+    }
+    }
     handleSubmit = (e) => {
         e.preventDefault()
         console.log('submit')
     }
 
-    render() {
 
-   
+    render() {
 
         return (
 

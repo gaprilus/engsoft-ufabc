@@ -2,21 +2,25 @@ import React, {Component} from 'react'
 
 export default class Navbar extends Component {
 
+    handleSubmit = () => {
+
+    }
+
     render() {
         return (
 
             <>
             <header>
             <div>
-                <h1>SMA Handshake</h1>
+                <h1><a href='/'>SMA Handshake</a></h1>
             </div>
             <div className='login-div'>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                 <label>Usuário</label>
                 <input></input>
                 <label>Senha</label>
                 <input></input>
-                <button>Entrar</button>
+                <button link='/mercadorias'>Entrar</button>
                 </form>
                 <a href='cadastro'>Cadastrar-se</a>
             </div>
